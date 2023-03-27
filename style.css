@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 :root {
@@ -27,6 +28,7 @@
 body {
   /* background: color img repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -161,4 +163,13 @@ footer {
 
 footer span {
   color: red;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(/assets/bg-desktop.png);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.png);
+  }
 }
